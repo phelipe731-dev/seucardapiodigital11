@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>SEU CARDÁPIO DIGITAL | AMBIENTE TESTE</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="content">
+            <a href="#" id="logo">SEU CARDÁPIO DIGITAL </a>
+            <!-- PC -->
+            <div class="items">
+                <a href="#about">
+                    Sobre
+                </a>
+                <a href="#menu">
+                    Cardápio
+                </a>
+                <a href="#promotions">
+                    Promoções
+                </a>
+                <a href="#service">
+                    Atendimento
+                </a>
+            </div>
+            <div class="icons">
+                <a href="./view/cart.html">
+                    <span class="iconify-inline" data-icon="mdi:cart-variant"></span>
+                    <div class="cartNotify"></div>
+                </a>
+                <a href="#" class="whatsapp">
+                    <span class="iconify-inline" data-icon="akar-icons:whatsapp-fill"></span>
+                </a>
+            </div>
+            <!-- MOBILE -->
+            <div class="btnMobile">
+                <span class="iconify-inline" data-icon="cil:burger"></span>
+            </div>
+        </div>
+        <div class="itemsMobile">
+            <a href="#about">
+                Sobre
+            </a>
+            <a href="#menu">
+                Cardápio
+            </a>
+            <a href="#promotions">
+                Promoções
+            </a>
+            <a href="#service">
+                Atendimento
+            </a>
+            <div class="icons">
+                <a href="./view/cart.html">
+                    <span class="iconify-inline" data-icon="mdi:cart-variant"></span>
+                    <div class="cartNotify"></div>
+                </a>
+                <a href="#" class="whatsapp">
+                    <span class="iconify-inline" data-icon="akar-icons:whatsapp-fill"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="bannerContent">
+            <div>
+                <h1>Seu negócio <span>totalmente digital</span>.</h1>
+                <p id="subtitle">Livre-se dos cardápios de papel e das plataformas que cobram caro por cada pedido.
+Com o Seu Cardápio Digital, você tem um sistema próprio e recebe pedidos direto no WhatsApp!</p>
+                <a href="#menu" class="btn">Cardápio</a>
+                <div class="social">
+                    <a href="#">
+                        <span class="iconify" data-icon="brandico:facebook"></span>
+                    </a>
+                    <a href="#">
+                        <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+                    </a>
+                    <a href="#">
+                        <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                    </a>
+                </div>
+            </div>
+            <img src="./img/burger.png" alt="hamburguer">
+        </div>
+    </div>
+    <!-- ITEMS -->
+    <div class="items container">
+        <div class="cardItems">
+            <span class="iconify" data-icon="ph:tote-duotone"></span>
+            <h4>Escolha os produtos</h4>
+            <p>Escolha todos os produtos que deseja comprar clicando no botão 'Adicionar'.</p>
+        </div>
+        <div class="cardItems">
+            <span class="iconify" data-icon="ph:circle-wavy-check-duotone"></span>
+            <h4>Verifique o carrinho</h4>
+            <p>Verifique se todos os produtos estão no carrinho de compras.</p>
+        </div>
+        <div class="cardItems">
+            <span class="iconify" data-icon="ph:wallet-duotone"></span>
+            <h4>Envie o pedido</h4>
+            <p>Após verificar os itens, você enviará o pedido no WhatsApp da lanchonete com um simples clique.</p>
+        </div>
+    </div>
+    <!-- ABOUT MENU ONLINE -->
+    <div id="about">
+        <div class="container">
+            <h3>SEU Cardápio online</h3>
+            <p>Seja bem-vindo ao seu cardápio online <span>PERSONALIZADO</span>!</p>
+            <p>Este aplicativo web foi desenvolvido para facilitar a experiência de pedidos de lanchonetes, restaurantes, cafeterias e outros estabelecimentos. Ele permite uma seleção prática e rápida dos produtos, enviando os pedidos diretamente para o WhatsApp do estabelecimento, proporcionando mais conforto para o cliente e maior agilidade no atendimento.</p>
+        </div>
+    </div>
+    <!-- MENU -->
+    <div id="menu" class="container">
+        <h3>Cardápio</h3>
+        <div class="linksMenu">
+            <button href="#" class="linkMenu active" id="showAll">Tudo</button>
+            <button href="#" class="linkMenu" id="showSnacks">Lanches</button>
+            <button href="#" class="linkMenu" id="showCombos">Combos</button>
+            <button href="#" class="linkMenu" id="showPortions">Porções</button>
+            <button href="#" class="linkMenu" id="showDrinks">Bebidas</button>
+            <a href="#promotions" class="linkMenu">Promoções</a>
+        </div>
+        <div class="cardsMenu" id="showMenu">
+            <!-- ITEMS MENU -->
+        </div>
+    </div>
+    <!-- PROMOTIONS -->
+    <div id="promotions">
+        <div class="container">
+            <h3>Promoções do dia</h3>
+            <div class="cardsMenu" id="showPromotions">
+                <!-- ITEMS MENU -->
+            </div>
+        </div>
+    </div>
+    <!-- SERVICE -->
+    <div id="service" class="container">
+        <h3>Atendimento</h3>
+        <div class="locAndCont">
+            <div class="cardLAC">
+                <div class="circle">
+                    <span class="iconify-inline" data-icon="akar-icons:location"></span>
+                </div>
+                <p>Rua dos Famintos, nº 100<br>Famintoslândia (SP)</p>
+            </div>
+            <div class="cardLAC">
+                <div class="circle">
+                    <span class="iconify-inline" data-icon="akar-icons:phone"></span>
+                </div>
+                <p>Telefone de contato e Whatsapp<br>(14) 99123-4567</p>
+            </div>
+
+        </div>
+        <div class="days">
+            <div class="cardDays">
+                <h5>Dom</h5>
+                <p>19h às 00h</p>
+            </div>
+            <div class="cardDays">
+                <h5>Seg</h5>
+                <p>Fechado</p>
+            </div>
+            <div class="cardDays">
+                <h5>Ter</h5>
+                <p>Fechado</p>
+            </div>
+            <div class="cardDays">
+                <h5>Qua</h5>
+                <p>19h às 00h</p>
+            </div>
+            <div class="cardDays">
+                <h5>Qui</h5>
+                <p>19h às 00h</p>
+            </div>
+            <div class="cardDays">
+                <h5>Sex</h5>
+                <p>19h às 00h</p>
+            </div>
+            <div class="cardDays">
+                <h5>Sáb</h5>
+                <p>19h às 00h</p>
+            </div>
+        </div>
+    </div>
+    <!-- MAP -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.1133601811925!2d-49.75473017539938!3d-21.698321939707288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15ecb135a5dd%3A0x66b807178c781125!2sFATEC%20Lins!5e0!3m2!1spt-BR!2sbr!4v1652099486542!5m2!1spt-BR!2sbr"
+        class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- FOOTER -->
+    <div class="footerTop">
+        <div class="content">
+            <p id="logo">SPACE BURGER</p>
+            <div>
+                <h4>Quem somos</h4>
+                <p>Somos uma empresa do ramo alimentício presente no mercado desde 2015 com serviços e produtos de ótima
+                    qualidade.</p>
+            </div>
+            <div class="links">
+                <h4>Links úteis</h4>
+                <a href="#">Saiba mais</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Nossos valores</a>
+                <a href="#">Termos de uso</a>
+            </div>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <div class="content">
+            <p>SEU CARDAPIO DIGITAL &copy; PHHOLDING.</p>
+            <div class="social">
+                <a href="#">
+                    <span class="iconify" data-icon="brandico:facebook"></span>
+                </a>
+                <a href="#">
+                    <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+                </a>
+                <a href="#">
+                    <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>
